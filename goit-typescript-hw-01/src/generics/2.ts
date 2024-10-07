@@ -7,15 +7,8 @@ type AllType = {
   weight: number;
 };
 
-type T = {
-  name: string;
-  color: string;
-};
-
-type B = {
-  position: number;
-  weight: number;
-};
+type T = Pick<AllType, "name" | "color">;
+type B = Pick<AllType, "position" | "weight">;
 
 function compare(top: T, bottom: B): AllType {
   return {
