@@ -1,3 +1,4 @@
+// Створіть інтерфейс User для типізації об'єктів, які містять такі властивості. Зверніть увагу, що адреса є необов'язковою властивістю.
 // const mango = {
 //   name: "Mango",
 //   age: 30,
@@ -23,7 +24,7 @@ interface User {
   name: string;
   age: number;
   email: string;
-  address: Address;
+  address?: Address;
 }
 
 const mango: User = {
